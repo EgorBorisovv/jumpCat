@@ -1,0 +1,113 @@
+@import url(./font/font.css);
+body{
+    font-family: 'EightBits';
+    background: rgb(44, 44, 44);
+    margin: 0;
+    padding: 0;
+    background: url('https://neocha-content.oss-cn-hongkong.aliyuncs.com/wp-content/uploads/sites/2/2019/01/pixel-perfect-close-up-01.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw; 
+    height: 100vh; 
+    overflow: hidden;
+}
+.box{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.earth{
+    position: absolute;
+    background-image: url('https://krot.info/uploads/posts/2020-10/1603488465_40-p-foni-s-sovetskimi-kovrami-45.jpg');
+    width: 200%;
+    height: 150px;
+    background-size: cover;
+    bottom: 0;
+    animation:srat infinite 20s linear;
+}
+@keyframes srat {
+    0%{
+        left:-1000px;
+    }100%{
+        left:0;
+    }
+}
+.cat{
+    width: 300px;
+    height: 220px;
+    background-image: url('https://pngimg.com/uploads/cat/cat_PNG50427.png');
+    background-size: cover;
+    position: absolute;
+    z-index: 9;
+    top: 425px;
+    left: 25%;
+    background-position: center;
+    transition: all 0.4s ease;
+}
+.jump{
+    width: 300px;
+    height: 300px;
+    background-image: url('https://art.pixilart.com/442fdc2798b9b67.png');
+    top: 150px;
+    transition: all 0.4s ease;
+}
+.tanos{
+    background-image: url('https://cdn131.picsart.com/264446300023212.png');
+    position: relative;
+    max-width: 13%;
+    height: 30%;
+    margin-top: 28%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: hui 4s linear ;
+    animation-iteration-count: infinite;
+}
+@keyframes hui {
+    0%{
+        left: 1900px;
+    }
+    100%{
+        left: -300px;
+    }
+}
+.sun{
+    background-image: url('https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/67c5bb4f1a79b43.png');
+    position: absolute;
+    width: 13%;
+    height: 18%;
+    margin-top: 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    animation: suny 25s linear ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes suny {
+    0%{
+        left: 105%;
+    }
+    100%{
+        left: -5%;
+    }
+}
+.score{
+    position: absolute;
+    font-family: 'EightBits';
+    font-size: 124px;
+    color: rgb(255, 255, 255);
+    top: 200px;
+    left: 450px;
+    width: 1000px;
+    height: 1000px;
+} 
+.count{
+    position: absolute;
+    font-family: 'EightBits';
+    font-size: 34px;
+    color: rgb(255, 255, 255);
+}

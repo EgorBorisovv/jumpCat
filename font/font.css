@@ -1,0 +1,7 @@
+@font-face {
+    font-family: EightBits;
+    src: url(./EightBits.ttf) format('truetype'),
+    url(./EightBits.woff2) format('woff');
+    font-weight: normal;
+    font-size: normal;
+}
